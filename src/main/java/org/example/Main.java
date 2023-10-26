@@ -1,19 +1,58 @@
 package org.example;
 
-// Press Shift twice to open the Search Everywhere dialog and type `show whitespaces`,
-// then press Enter. You can now see whitespace characters in your code.
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        Scanner skener = new Scanner(System.in);
+        List<Double> brojevi = new ArrayList<>();
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        while (true) {
+            System.out.println("Unesite broj ili 'stop' za završetak: ");
+            String unos = skener.nextLine();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
+            if (unos.equalsIgnoreCase("stop")) {
+                break;
+            } else {
+                try {
+                    double broj = Double.parseDouble(unos);
+                    brojevi.add(broj);
+                } catch (NumberFormatException e) {
+                    System.out.println("Nevažeći unos. Ponovite unos.");
+                }
+            }
         }
+
+        if (brojevi.isEmpty()) {
+            System.out.println("Lista je prazna. Nema statistika za prikaz.");
+        } else {
+            double min = Double.MAX_VALUE;
+            double max = Double.MIN_VALUE;
+            double suma = 0;
+
+            for (double broj : brojevi) {
+                if (broj < min) min = broj;
+                if (broj > max) max = broj;
+                suma += broj;
+            }
+
+            double srednjaVrijednost = suma / brojevi.size();
+
+            double sumaKvadratnihOdudaranja = 0;
+            for (double broj : brojevi) {
+                sumaKvadratnihOdudaranja += Math.pow(broj - srednjaVrijednost, 2);
+            }
+
+            double standardnaDevijacija = Math.sqrt(sumaKvadratnihOdudaranja / brojevi.size());
+
+            System.out.println("Min: " + min);
+            System.out.println("Max: " + max);
+            System.out.println("Srednja vrijednost: " + srednjaVrijednost);
+            System.out.println("Standardna devijacija: " + standardnaDevijacija);
+        }
+
+        skener.close();
     }
 }

@@ -2,11 +2,6 @@ package org.example;
 
 import java.util.*;
 
-    /**
-     * Class for phonebook
-     *
-     * @author Hana Mahmutović
-     */
     public class Phonebook {
 
         private Map<String, PhoneNumber> numbers;

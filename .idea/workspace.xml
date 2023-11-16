@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c37b5456-cae9-4a6f-869c-0d3502adf6ff" name="Changes" comment="hh">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/PhonebookTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="c37b5456-cae9-4a6f-869c-0d3502adf6ff" name="Changes" comment="hh" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -43,7 +38,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "lv3-z2",
-    "last_opened_file_path": "C:/Users/Muhak/Rpr",
+    "last_opened_file_path": "C:/Users/Muhak/Rpr/src/test",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -54,11 +49,14 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Muhak\Rpr\src\test" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Muhak\Rpr\src\main\java" />
       <recent name="C:\Users\Muhak\Rpr\src\main\java\org\example" />
       <recent name="C:\Users\Muhak\Rpr\src\main\java\org\example\test" />
       <recent name="C:\Users\Muhak\Rpr\src\main\java\test" />
-      <recent name="C:\Users\Muhak\Rpr\src\main\java" />
       <recent name="C:\Users\Muhak\Rpr\src\test\java" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -94,7 +92,7 @@
       <workItem from="1699544974858" duration="676000" />
       <workItem from="1700089784428" duration="358000" />
       <workItem from="1700090180132" duration="587000" />
-      <workItem from="1700090792587" duration="2231000" />
+      <workItem from="1700090792587" duration="2666000" />
     </task>
     <servers />
   </component>
